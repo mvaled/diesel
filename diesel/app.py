@@ -80,7 +80,7 @@ class Application(object):
                 except ApplicationEnd:
                     log.warning("-- ApplicationEnd raised.. exiting main loop --")
                     break
-                except Exception, e:
+                except Exception:
                     log.error("-- Unhandled Exception rose to main loop --")
                     log.error(traceback.format_exc())
 
